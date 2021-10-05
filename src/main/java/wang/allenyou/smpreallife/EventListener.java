@@ -15,7 +15,7 @@ public class EventListener implements Listener {
 		LivingEntity entity = event.getEntity();
 		if (entity instanceof Player player) {
 			String playerName = player.getDisplayName();
-			SMPRealLife.instance.dataTable.setLife(playerName, SMPRealLife.instance.dataTable.getLife(playerName));
+			SMPRealLife.instance.dataTable.setLife(playerName, SMPRealLife.instance.dataTable.getLife(playerName) - 1);
 		}
 	}
 
