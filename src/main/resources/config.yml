@@ -1,0 +1,6 @@
+life:
+  defaultLife: 5
+messages:
+  playerNotFound: "404: Player \"${player_name}\" not found!" # Use ${player_name} to replace the correct player name
+  dontHavePermission: "403: You don't have the permission \"${permission_name}\"" # Use ${permission_name} to replace the correct permission name
+  getLife: "${player_name} has ${correct_life} remaining lives."

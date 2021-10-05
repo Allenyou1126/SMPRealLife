@@ -1,5 +1,5 @@
 <component name="ArtifactManager">
-  <artifact type="jar" name="SMPRealLife">
+  <artifact type="jar" build-on-make="true" name="SMPRealLife">
     <output-path>$PROJECT_DIR$/out/artifacts/SMPRealLife</output-path>
     <root id="archive" name="SMPRealLife.jar">
       <element id="module-output" name="SMPRealLife" />

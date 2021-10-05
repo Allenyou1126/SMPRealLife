@@ -1,0 +1,32 @@
+name: "SMPRealLife"
+main: "wang.allenyou.smpreallife.SMPRealLife"
+version: 1.0-SNAPSHOT
+api-version: 1.17
+commands:
+  getlife:
+    aliases:
+      - "gl"
+    usage: "/getlife [PlayerName]"
+    description: "Get rest life of a player."
+    permission: life.get
+    permission-message: "You should have the permission of \"life.get\" to do this!"
+  setlife:
+    aliases:
+      - "sl"
+    usage: "/setlife <PlayerName> <TargetLife>"
+    description: "Change the rest life of a player."
+    permission: life.set
+    permission-message: "You should have the permission of \"life.set\" to do this!"
+
+permissions:
+  life.*:
+    description: "Give access to all SMPRealLife commands."
+    children:
+      - life.get
+      - life.set
+  life.get:
+    description: "Allow player to query someone's life"
+    default: true
+  life.set:
+    description: "Allow player to change someome's life"
+    default: op
